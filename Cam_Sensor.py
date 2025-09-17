@@ -19,7 +19,7 @@ WEB_DISPLAY_TIME = 5.0                        # Tiempo en segundos que se muestr
 MAX_WIDTH = 640                               # Ancho máximo de la ventana
 SHOW_DEBUG_BOXES = True                       # True = dibuja cajas en las caras detectadas
 PERSON_CLOSE_THRESHOLD = 0.1                  # Porcentaje del frame para considerar una cara "cercana"
-WEBPAGE_URL = "C:\\Users\\"  # Ruta local de la página web
+WEBPAGE_URL = "C:\\Users\\"  # Ruta local o link de la página web
 BACKGROUND_VOLUME = 0.1                       # Volumen de la música de fondo (0.0 - 1.0)
 
 # ---------- MODELO DE DETECCIÓN ----------
@@ -176,4 +176,5 @@ while True:
 cap.release()
 cv2.destroyAllWindows()
 if USE_MUSIC:
+
     pygame.mixer.music.stop()
